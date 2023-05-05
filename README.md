@@ -2,10 +2,18 @@
 
 ## Running the test
 
-The following sample uses an API spec'd at 10 requests per second.
+1. Configure an env var for `OPENSEA_API_KEY`.
+1. Modify the value for `RATE_LIMIT_RPS` in `index.js`.
 
-We are sending requests at a rate of less than 5 requests per second
-and are being heavily rate-limited.
+Start the script by running
+```sh
+% pnpm start
+```
+
+## Sample output
+
+The following sample output was generated using an API key spec'd
+at 10 requests per second and a `RATE_LIMIT_RPS` value of 5.
 
 ```sh
 % pnpm start
